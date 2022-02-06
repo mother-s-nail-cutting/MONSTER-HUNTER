@@ -1,17 +1,29 @@
 
 
-p{
-  color: #ffe600d5; 
+p.main{
+  color: #00000071; 
   font-size: 600%; 
-  font-family: 'IM Fell DW Pica SC', serif; 
-  font-weight: 900; 
-  text-shadow: 3px 3px 5px black;
-  text-shadow: 4px 4px 5px white;
+  font-family: 'Cormorant Upright', serif;
+  /*字体(google fonts)*/
+  font-weight: 400; /*文字の太さ*/
+  text-shadow: 1px 0px 0px white,
+               0px 1px 0px white,
+               -1px 0px 0px white,
+               0px -1px 0px white,
+               3px 0px 5px rgb(255, 255, 255),
+               0px 3px 5px rgb(255, 255, 255),
+               -3px 0px 5px rgb(255, 255, 255),
+               0px -3px 5px rgb(255, 255, 255); /*影*/
+
+  position: absolute;
+  right: 21%;
+  bottom: 25%;
   
 }
 
+
 body{
-  background-image: url(title.jpeg);/*画像ファイルの指定*/
+  background-image: url(figure12.jpeg);/*画像ファイルの指定*/
   background-position : center center;/*どんな画面でも天地左右*/
   background-attachment: fixed;/*画像をみっちり入れる*/
   background-size: cover;/*画面の大きさに臨機応変に伸び縮み*/
@@ -19,14 +31,25 @@ body{
 }
 
 button {
-  border-radius: 4;
-  position: absolute;
-  right:46%;
+  border-radius: 4; 
+
+  /*ボタンの位置*/
+  position: absolute; 
+  right:42%;
   bottom:20%;
   font-size: 300%;
+  /*ボタン内の背景色*/
   background-color: transparent;
-  text-shadow: 2pt 2pt 7pt white ;
+  /*ボタン内の文字の影*/
+  text-shadow: 2pt 0pt 7pt rgba(255, 255, 255, 0.445),
+                0pt 2pt 7pt rgba(255, 255, 255, 0.473), 
+                -2pt 0pt 7pt rgba(255, 255, 255, 0.432),
+                0pt -2pt 7pt rgba(255, 255, 255, 0.438);
+  /*ボタンの枠*/
   border: none;
+  /*ボタン内文字の色*/
   color:rgb(255, 251, 244);
+  font-family: 'Scheherazade New', serif;
+  font-weight: 1;
 }
 
