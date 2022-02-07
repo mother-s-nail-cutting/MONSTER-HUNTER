@@ -24,13 +24,15 @@ setTimeout(function() {
 }, 5000)
 
 
-const animationTargetElement = document.querySelectorAll(".main");
 
-const texts = animationTargetElement[0].textContent;
-console.log(texts);
+/*タイトルのアニメーション*/
+const animationTargetElement = document.querySelectorAll(".main");//class名がmainの要素を取得
+
+const texts = animationTargetElement[0].textContent;//要素から文字列を取得
+
 const textsArray = [];
 
-animationTargetElement[0].textContent = "";
+animationTargetElement[0].textContent = "";//表示する文字列を空にする
 
 //文字列を分割
 for(let i = 0; i < texts.split("").length; i++){

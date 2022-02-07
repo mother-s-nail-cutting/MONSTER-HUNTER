@@ -91,13 +91,14 @@ body{
 
 @keyframes flashing {
   50%{
-    opacity: .3;
+    opacity: .3;/*透明度*/
   }
 }
 
 .loadingText{
-  color: white;
-  animation: .5s flashing infinite backwards;
+  color: white;/*Loading...の色*/
+  animation: .5s flashing infinite backwards;/*点滅する頻度*/
+  font-family: 'Source Sans Pro', sans-serif;/*フォント*/
 }
 
 
