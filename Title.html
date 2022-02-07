@@ -4,21 +4,47 @@
 
     <title> MONSTER HUNTER</title>
 
-    <link rel="stylesheet" type="text/css" href="Title.css">
 
+  
+   
+ 
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!--タイトルのフォント-->
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@300&family=Laila:wght@300&display=swap" rel="stylesheet">
+    <!--ボタンのフォント-->
     <link href="https://fonts.googleapis.com/css2?family=Scheherazade+New&display=swap" rel="stylesheet">
-   
+
+    
+
+
+    <!--CSS埋め込み-->
+    <link rel="stylesheet" type="text/css" href="Title.css">
+
+    
   </head>
   <body>
     
+    <div id="loading" class="loading active">
+      <div class="loadingText">Loading...</div>
+    </div>
 
-    <p class="main">MONSTER HUNTER</p> 
 
-    <button onclick="location.href='/*遷移先のurl*/'"> -  START  -</button>
+    
+    <div id="text" class="text active">
 
+     <p class="main">MONSTER HUNTER</p> 
+
+     <button class = "button" onclick="location.href='/*遷移先のurl*/'"> -  START  -</button>
+
+    </div>
+    
+
+
+
+    
+    <!--JavaScript埋め込み-->
+    <script type="text/javascript" src="Title.js"></script>
   </body>
 </html>
