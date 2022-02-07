@@ -1,4 +1,4 @@
-
+@charset "utf-8";
 
 /*タイトル*/
 .main{
@@ -36,6 +36,12 @@ body{
 }
 
 
+@keyframes flashing2 {
+  50%{
+    opacity: 0;
+  }
+}
+
 /*ボタン*/
 .button {
   border-radius: 4; 
@@ -58,6 +64,7 @@ body{
   color:rgb(255, 251, 244);
   font-family: 'Scheherazade New', serif; /*字体*/
   font-weight: 1; /*文字の太さ*/
+  animation: 2s flashing2 infinite; /*点滅*/
 }
 
 .loading{
@@ -90,5 +97,20 @@ body{
 
 .loadingText{
   color: white;
-  animation: .5s flashing infinite;
+  animation: .5s flashing infinite backwards;
+}
+
+
+@keyframes showText {
+  0%{
+    opacity: 0;
+    transform: translateY(30px);/*下から出てくる*/
+  }
+  100%{
+    opacity: 1;
+  }
+}
+.main span{
+  display: inline-block;/*変形*/
+  animation: showText 3s backwards; /*backwards: 初めはopacityが0から*/
 }
