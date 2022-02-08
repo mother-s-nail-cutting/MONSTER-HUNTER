@@ -1,6 +1,12 @@
 @charset "uft-8";
 body{
-  background-color: rgb(241, 214, 155);
+  background: -moz-radial-gradient(rgb(241, 214, 155) 90%, rgb(65, 30, 2) 98%);
+  background: -webkit-radial-gradient(rgb(241, 214, 155) 90%, rgb(65, 30, 2) 98%);
+  background: radial-gradient(rgb(241, 214, 155) 90%, rgb(65, 30, 2) 98%);
+  background-position : center center;/*どんな画面でも天地左右*/
+  background-attachment: fixed;/*画像をみっちり入れる*/
+  background-size: cover;/*画面の大きさに臨機応変に伸び縮み*/
+
 }
 
 
@@ -8,7 +14,10 @@ body{
   font-family: 'Klee One', cursive;
   font-size: 50px;
   text-align: center;
-  margin: 120px;
+  margin-top: 120px;
+  margin-bottom: 0px;
+  margin-left: 120px;
+  margin-right: 120px;
   padding: 15px;
   color: white;
   text-shadow: 1px 0 2px black,
@@ -20,13 +29,11 @@ body{
 }
 
 .box{
-  position: absolute;
-  top: 10%;
-  left: 2%;
+  margin-top: -160px;
   width: 350px;
   height: 80px;
   background-color: rgb(199, 168, 81);
-  border: double 1px black;
+  border: double 3px black;
   transform: rotate(-10deg);
 }
 
@@ -43,27 +50,115 @@ body{
   text-shadow: 2px 0 20px white,
                0   2px 20px white,
                -2px 0 20px white,
-               0 -2px 20px white;
+               0 -2px 20px white,
+               20px 0 20px rgb(231, 216, 149),
+               0   20px 20px rgb(231, 216, 149),
+               -20px 0 20px rgb(231, 216, 149),
+               0 -20px 20px rgb(231, 216, 149);
 }
 
 img{
-  position:absolute;
-  right: 43%;
-  bottom: 40%;
+  margin-top: 75px;
+  margin-bottom: 0;
+  margin-left: 615px;
+  margin-right: 615px;
+  background-position : center center;/*どんな画面でも天地左右*/
+  background-attachment: fixed;/*画像をみっちり入れる*/
+  background-size: cover;/*画面の大きさに臨機応変に伸び縮み*/
 }
 
 .zinogre{
-  margin-top: 210px;
+  margin-top: 0px;
   margin-left: 40px;
   margin-right: 40px;
+  margin-bottom: 0;
   font-size: 30px;
-  border-top: dashed 1px  rgb(104, 66, 10);
-  border-bottom: dashed 1px  rgb(104, 66, 10);
+  border-top: dashed 1px  rgba(151, 131, 101, 0.795);
+  border-bottom: dashed 1px  rgba(151, 131, 101, 0.795);
   color: rgb(255, 123, 0);
   text-shadow: 1px 0 1px black,
                0   1px 1px black,
                -1px 0 1px black,
                0 -1px 1px black;
   font-weight: 500;
+}
+
+.money{
+  margin-top: 10px;
+  margin-right: 0px;
+  margin-bottom: 0;
+  width: 550px;
+  height: 70px;
+  margin-left: 40px;
+  background: -moz-linear-gradient(to left, rgba(241, 214, 155, 0.473), rgb(209, 185, 134) 20%,rgb(209, 185, 134) 80%, rgba(241, 214, 155, 0.493));
+  background: -webkit-linear-gradient(to left, rgba(241, 214, 155, 0.473), rgb(209, 185, 134) 20%,rgb(209, 185, 134) 80%, rgba(241, 214, 155, 0.452));
+  background: linear-gradient(to left, rgba(241, 214, 155, 0.507), rgb(209, 185, 134) 20%,rgb(209, 185, 134) 80%, rgba(241, 214, 155, 0.459));
+
+}
+
+.char11{
+  margin-right: 0px;
+  font-family: 'Klee One', cursive;
+  color: rgb(255, 208, 0);
+  font-size: 47px;
+  text-shadow: 1px 0 1px black,
+               0   1px 1px black,
+               -1px 0 1px black,
+               0 -1px 1px black;
+}
+
+.char12{
+  padding-left: 230px;
+  margin-right: 0;
+  color: rgb(253, 239, 161);
+  font-size: 40px;
+  text-shadow: 1px 0 1px black,
+               0   1px 1px black,
+               -1px 0 1px black,
+               0 -1px 1px black;
+}
+
+.char13{
+  margin-left: 0;
+  color: rgb(165, 136, 94);
+  font-size: 36px;
+  text-shadow: 1px 0 1px black,
+               0   1px 1px black,
+               -1px 0 1px black,
+               0 -1px 1px black;
+}
+
+.time{
+  margin-top: -70px;
+  margin-right: 40px;
+  margin-bottom: 0;
+  margin-left: 800px;
+  width: 550px;
+  height: 70px;
+  margin-right: 40px;
+  margin-bottom: 50px;
+  background: -moz-linear-gradient(to left, rgba(241, 214, 155, 0.473), rgb(209, 185, 134) 20%,rgb(209, 185, 134) 80%, rgba(241, 214, 155, 0.493));
+  background: -webkit-linear-gradient(to left, rgba(241, 214, 155, 0.473), rgb(209, 185, 134) 20%,rgb(209, 185, 134) 80%, rgba(241, 214, 155, 0.452));
+  background: linear-gradient(to left, rgba(241, 214, 155, 0.507), rgb(209, 185, 134) 20%,rgb(209, 185, 134) 80%, rgba(241, 214, 155, 0.459));
+}
+
+.char21{
+  font-family: 'Klee One', cursive;
+  color: rgb(255, 208, 0);
+  font-size: 47px;
+  text-shadow: 1px 0 1px black,
+               0   1px 1px black,
+               -1px 0 1px black,
+               0 -1px 1px black;
+}
+
+.char22{
+  padding-left: 250px;
+  color: white;
+  font-size: 40px;
+  text-shadow: 1px 0 1px black,
+               0   1px 1px black,
+               -1px 0 1px black,
+               0 -1px 1px black;
 }
 
