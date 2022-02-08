@@ -1,8 +1,8 @@
 @charset "uft-8";
 body{
-  background: -moz-radial-gradient(rgb(241, 214, 155) 90%, rgb(65, 30, 2) 98%);
-  background: -webkit-radial-gradient(rgb(241, 214, 155) 90%, rgb(65, 30, 2) 98%);
-  background: radial-gradient(rgb(241, 214, 155) 90%, rgb(65, 30, 2) 98%);
+  background: -moz-radial-gradient(rgb(236, 215, 169) 90%, rgb(65, 30, 2) 98%);
+  background: -webkit-radial-gradient(rgb(236, 215, 169) 90%, rgb(65, 30, 2) 98%);
+  background: radial-gradient(rgb(236, 215, 169) 90%, rgb(65, 30, 2) 98%);
   background-position : center center;/*どんな画面でも天地左右*/
   background-attachment: fixed;/*画像をみっちり入れる*/
   background-size: cover;/*画面の大きさに臨機応変に伸び縮み*/
@@ -90,9 +90,9 @@ img{
   width: 550px;
   height: 70px;
   margin-left: 40px;
-  background: -moz-linear-gradient(to left, rgba(241, 214, 155, 0.473), rgb(209, 185, 134) 20%,rgb(209, 185, 134) 80%, rgba(241, 214, 155, 0.493));
-  background: -webkit-linear-gradient(to left, rgba(241, 214, 155, 0.473), rgb(209, 185, 134) 20%,rgb(209, 185, 134) 80%, rgba(241, 214, 155, 0.452));
-  background: linear-gradient(to left, rgba(241, 214, 155, 0.507), rgb(209, 185, 134) 20%,rgb(209, 185, 134) 80%, rgba(241, 214, 155, 0.459));
+  background: -moz-linear-gradient(to left, rgba(236, 215, 169, 0.781), rgb(209, 185, 134) 20%,rgb(209, 185, 134) 80%, rgba(236, 215, 169, 0.76));
+  background: -webkit-linear-gradient(to left, rgba(236, 215, 169, 0.719), rgb(209, 185, 134) 20%,rgb(209, 185, 134) 80%, rgba(236, 215, 169, 0.74));
+  background: linear-gradient(to left, rgba(236, 215, 169, 0.801), rgba(209, 185, 134, 0.747) 20%,rgb(209, 185, 134) 80%, rgba(236, 215, 169, 0.774));
 
 }
 
