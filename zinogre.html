@@ -38,10 +38,38 @@
         <span class="char22">50分</span>
         <span class ="char23"></span>
       </div>
+
+      <div class="people">
+        <span class="char31">参加人数  </span>
+        <span class="char32">4人 </span>
+      </div>
+
+      <div class="button"> 
+        <button id="button" class="char41" onclick="clickButton()">受注</button>
+        <p id="circle" class="char42 active">・</p>
+      </div>
     </div>
 
+    <div id="yWindow" class="smallwindow active">
+      <p class="sentence11">受注を確定します。</p>
+      <div class="buttonYN">
+      <button id="buttonY" class="button01" onclick="clickButtonY()">はい</button>
+      <button id="buttonN" class="button02" onclick="clickButtonN()">いいえ</button>
+    </div>
+    </div>
 
-  
+    <div id="nWindow" class="smallwindow2 active">
+      <p class="sentence21">このクエストは受注済です。
+        キャンセルしますか？</p>
+      <div class="buttonYN2">
+      <button id="buttonY2" class="button11" onclick="clickButtonY2()">はい</button>
+      <button id="buttonN2" class="button12" onclick="clickButtonN2()">いいえ</button>
+    </div>
+    </div>
+
+    
+
+  <script type="text/javascript" src="zinogre.js"> </script>
   
 </body>
 </html>
