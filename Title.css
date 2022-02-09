@@ -1,10 +1,10 @@
+@charset "utf-8";
 
-
-p.main{
+/*タイトル*/
+.main{
   color: #00000071; 
   font-size: 600%; 
-  font-family: 'Cormorant Upright', serif;
-  /*字体(google fonts)*/
+  font-family: 'Cormorant Upright', serif;/*字体(google fonts)*/
   font-weight: 400; /*文字の太さ*/
   text-shadow: 1px 0px 0px white,
                0px 1px 0px white,
@@ -21,7 +21,12 @@ p.main{
   
 }
 
+.text.active{
+  opacity: 0;
+  visibility: hidden;
+}
 
+/*背景*/
 body{
   background-image: url(figure12.jpeg);/*画像ファイルの指定*/
   background-position : center center;/*どんな画面でも天地左右*/
@@ -30,7 +35,15 @@ body{
   background-color:black;/*画像が読み込まれる前のカラー*/
 }
 
-button {
+
+@keyframes flashing2 {
+  50%{
+    opacity: 0;
+  }
+}
+
+/*ボタン*/
+.button {
   border-radius: 4; 
 
   /*ボタンの位置*/
@@ -49,7 +62,56 @@ button {
   border: none;
   /*ボタン内文字の色*/
   color:rgb(255, 251, 244);
-  font-family: 'Scheherazade New', serif;
-  font-weight: 1;
+  font-family: 'Scheherazade New', serif; /*字体*/
+  font-weight: 1; /*文字の太さ*/
+  animation: 2s flashing2 infinite; /*点滅*/
 }
 
+.loading{
+  position:fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s;
+}
+
+.loading.active{
+  opacity: 1;
+  visibility: visible;
+}
+
+@keyframes flashing {
+  50%{
+    opacity: .3;/*透明度*/
+  }
+}
+
+.loadingText{
+  color: white;/*Loading...の色*/
+  animation: .5s flashing infinite backwards;/*点滅する頻度*/
+  font-family: 'Source Sans Pro', sans-serif;/*フォント*/
+}
+
+
+@keyframes showText {
+  0%{
+    opacity: 0;
+    transform: translateY(30px);/*下から出てくる*/
+  }
+  100%{
+    opacity: 1;
+  }
+}
+.main span{
+  display: inline-block;/*変形*/
+  animation: showText 3s backwards; /*backwards: 初めはopacityが0から*/
+}
