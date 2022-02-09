@@ -209,29 +209,35 @@ img{
 }
 
 .char41{
-  width: 80%;
-  height: 80%;
-  margin-left: 60px;
+  width: 540px;
+  height: 85%;
+  margin-left: 10px;
   margin-top: 5px;
   margin-bottom: 0;
   font-size: 40px;
   font-family: 'Klee One', cursive;
   color: white;
-  text-shadow: 1px 0 1px rgb(112, 243, 100),
-               0   1px 1px rgb(112, 243, 100),
-               -1px 0 1px rgb(112, 243, 100),
-               0 -1px 1px rgb(112, 243, 100),
+  text-shadow: 1px 0 1px black,
+               0   1px 1px black,
+               -1px 0 1px black,
+               0 -1px 1px black,
                3px 0 3px rgba(255, 255, 255, 0.514),
                0   3px 3px rgba(255, 255, 255, 0.445),
                -3px 0 3px rgba(255, 255, 255, 0.466),
                0 -3px 3px rgba(255, 255, 255, 0.479);
   border:none;
-  background: none;
+  background-color: rgba(255, 255, 255, 0);
+}
+
+.char41:hover{
+  background: -moz-linear-gradient(to left, rgba(241, 214, 155, 0.473), rgb(112, 243, 100), 20%,rgb(112, 243, 100), 80%, rgba(241, 214, 155, 0.493));
+  background: -webkit-linear-gradient(to left, rgba(241, 214, 155, 0.473), rgb(112, 243, 100), 20%,rgb(112, 243, 100), 80%, rgba(241, 214, 155, 0.493));
+  background: linear-gradient(to left, rgba(241, 214, 155, 0.473), rgb(112, 243, 100), 20%,rgb(112, 243, 100), 80%, rgba(241, 214, 155, 0.493));
 }
 
 .char42 {
-  margin-left: 190px;
-  margin-top: -50px;
+  margin-left: -30px;
+  margin-top: -55px;
   font-size: 40px;
   color: rgb(208, 255, 176);
   text-shadow: 
